@@ -1,0 +1,9 @@
+{
+  "airline": "VUELING",
+  "supplier": "CrazyAir",
+  "fare": "100.00",
+  "departureAirportCode": "BKK",
+  "destinationAirportCode": "EZE",
+  "departureDate": "2024-08-23T21:00:00.000",
+  "arrivalDate": "2024-08-24T19:00:00.000"
+}

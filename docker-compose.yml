@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  flightservice:
+    build: .
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./crazy-air.json:/app/crazy-air.json

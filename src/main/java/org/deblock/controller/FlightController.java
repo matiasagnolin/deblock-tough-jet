@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 @RestController
 public class FlightController {
@@ -34,9 +32,10 @@ public class FlightController {
         System.out.println("Return Date: " + returnDate);
         System.out.println("Number of Passengers: " + numberOfPassengers);
 
+        System.out.println("from file : crazy-air-a.json");
 
         // Load the JSON file from the classpath
-        Resource resource = new ClassPathResource("crazy-air.json");
+        Resource resource = new ClassPathResource("crazy-air-a.json");
         try (InputStream inputStream = resource.getInputStream()) {
             // Convert InputStream to String
             String jsonResponse = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
